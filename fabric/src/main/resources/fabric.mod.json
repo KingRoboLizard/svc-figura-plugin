@@ -11,10 +11,10 @@
     "${authors}"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/KingRoboLizard/svc-figura-plugin/",
+    "sources": "https://github.com/KingRoboLizard/svc-figura-plugin"
   },
-  "license": "Insert License Here",
+  "license": "LGPL-2.1",
   "environment": "client",
   "depends": {
     "fabric": "*",
