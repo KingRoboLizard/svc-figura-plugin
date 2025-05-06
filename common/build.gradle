@@ -1,0 +1,20 @@
+architectury {
+    common(rootProject.enabled_platforms.split(","))
+}
+
+repositories {
+    maven { url 'https://jitpack.io' }
+    maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+}
+
+dependencies {
+    // Figura common lib
+    modCompileOnly("org.figuramc:figura-common-intermediary:$figura_version+$minecraft_version")
+    
+    modCompileOnly("maven.modrinth:simple-voice-chat:fabric-$svc_version")
+
+    modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
+}

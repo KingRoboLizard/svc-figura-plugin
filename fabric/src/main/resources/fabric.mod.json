@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${display_name}",
+  "description": "${description}",
+  "mixins": [
+    "figurasvcportrait-common.mixins.json"
+  ],
+  "authors": [
+    "${authors}"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "Insert License Here",
+  "environment": "client",
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.21.3",
+    "figura": ">=${figura_version}"
+  }
+}

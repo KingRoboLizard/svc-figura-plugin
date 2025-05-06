@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "org.figuramc.figurasvcportrait.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "SVCGroupChatManagerMixin",
+    "SVCGroupEntryMixin",
+    "SVCJoinGroupEntryMixin",
+    "SVCPlayerVolumeEntryMixin"
+  ],
+  "mixins": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
