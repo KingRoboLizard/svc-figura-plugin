@@ -1,0 +1,6 @@
+{
+    "figura.config.svc_portrait": "Figura SVC Portrait",
+    "figura.config.svc_portrait.tooltip": "Toggles if the Figura portrait should be rendered in SVC instead of the vanilla skin",
+    "figura.config.svc_nameplate": "Figura SVC Nameplate",
+    "figura.config.svc_nameplate.tooltip": "Toggles if the Figura nameplate should be rendered in SVC instead of the vanilla nameplate"
+}

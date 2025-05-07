@@ -11,6 +11,7 @@ import org.figuramc.figura.permissions.Permissions;
 import org.figuramc.figura.utils.TextUtils;
 import org.figuramc.figura.utils.ui.UIHelper;
 import org.figuramc.figurasvcportrait.FiguraSVCIconCompat;
+import org.figuramc.figurasvcportrait.config.Config;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -51,6 +52,9 @@ public class SVCPlayerVolumeEntryMixin {
 
     @WrapWithCondition(method = "renderElement(Lnet/minecraft/client/gui/GuiGraphics;IIIIIIIZFIIII)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiGraphics;drawString(Lnet/minecraft/client/gui/Font;Ljava/lang/String;IIIZ)I"))
     private boolean figuraName(GuiGraphics guiGraphics, Font renderer, @Nullable String text, int x, int y, int color, boolean shadowed, @Local(ordinal = 9) int textX, @Local(ordinal = 10) int textY) {
+        if (!Config.SVC_NAMEPLATE.value)
+            return true;
+
         Component playerName = Component.literal(state.getName());
 
         int config = Configs.CHAT_NAMEPLATE.value;
